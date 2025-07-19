@@ -71,6 +71,8 @@ type Verification struct {
 	// responsibility.
 	Identifier string
 
+	Selector string
+
 	// The list of signed header fields.
 	HeaderKeys []string
 
@@ -222,6 +224,7 @@ func verify(h header, r io.Reader, sigField, sigValue string, options *VerifyOpt
 	}
 
 	verif.Domain = stripWhitespace(params["d"])
+	verif.Selector = stripWhitespace(params["s"])
 
 	for _, tag := range requiredTags {
 		if _, ok := params[tag]; !ok {

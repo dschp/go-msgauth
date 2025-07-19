@@ -1,6 +1,6 @@
-module github.com/emersion/go-msgauth
+module github.com/dschp/go-msgauth
 
-go 1.23.0
+go 1.24.5
 
 require (
 	github.com/emersion/go-milter v0.4.1
