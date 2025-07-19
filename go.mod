@@ -8,3 +8,5 @@ require (
 )
 
 require github.com/emersion/go-message v0.18.2 // indirect
+
+replace github.com/emersion/go-msgauth 0.7.0 => github.com/dschp/go-msgauth 0.7.0
